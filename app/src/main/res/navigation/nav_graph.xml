@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarFragment"
+    >
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.macs.revitalize.presentation.calendar.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.macs.revitalize.presentation.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.macs.revitalize.presentation.reports.ReportsFragment"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.macs.revitalize.presentation.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_fragmentSettingsAbout"
+            app:destination="@id/fragmentSettingsAbout" />
+        <action
+            android:id="@+id/action_settingsFragment_to_fragmentSettingsContact"
+            app:destination="@id/fragmentSettingsContact" />
+    </fragment>
+    <fragment
+        android:id="@+id/habitFragment"
+        android:name="com.macs.revitalize.presentation.habit.HabitFragment"
+        android:label="fragment_habit"
+        tools:layout="@layout/fragment_habit" >
+        <action
+            android:id="@+id/action_habitFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment"
+            app:popUpTo="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSettingsAbout"
+        android:name="com.macs.revitalize.presentation.settings.innerFragments.FragmentSettingsAbout"
+        android:label="fragment_settings_about"
+        tools:layout="@layout/fragment_settings_about" >
+        <action
+            android:id="@+id/action_fragmentSettingsAbout_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSettingsContact"
+        android:name="com.macs.revitalize.presentation.settings.innerFragments.FragmentSettingsContact"
+        android:label="fragment_settings_contact"
+        tools:layout="@layout/fragment_settings_contact" >
+        <action
+            android:id="@+id/action_fragmentSettingsContact_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/black_btn"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_addtypevent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/black_btn"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:hint="Type Evnt"
+        android:inputType="textShortMessage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_settimeevent"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:adjustViewBounds="true"
+            android:tint="@color/white"
+            android:src="@drawable/ic_time_event" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_eventtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="00:00 AM"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_alarmme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:buttonTint="@android:color/white"
+            android:text="Alarm Me"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_addevent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@android:color/white"
+            android:text="Add Event"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</com.google.android.material.circularreveal.CircularRevealLinearLayout>

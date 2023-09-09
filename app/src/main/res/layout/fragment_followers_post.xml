@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="#FFFFFF"
+    tools:context=".presentation.feed.FollowersPostFragment"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutPost1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/ic_social_feed" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal"
+                tools:ignore="MissingClass">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_baseline_favorite_24"
+                    app:tint="#EE116F" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="217dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/sym_action_chat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mission accomplished"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutVertical3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:ignore="MissingClass"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textViewComment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="comment1"
+                    tools:ignore="TextViewEdits,TouchTargetSizeCheck" />
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/recyclerViewComments"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="?attr/actionBarSize" />-->
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textViewComment1"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:inputType="textPersonName"-->
+                <!--                    android:text="@string/comment_1"-->
+                <!--                    tools:ignore="TextViewEdits,TouchTargetSizeCheck" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textViewComment2"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:inputType="textPersonName"-->
+                <!--                    android:text="@string/comment_2"-->
+                <!--                    tools:ignore="TextViewEdits" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutHorizontal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                tools:ignore="MissingClass">
+
+                <EditText
+                    android:id="@+id/editTextComment"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/buttonPostComment"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="POST"
+                    android:textColor="#0C0C0C"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+<!--</ScrollView>-->
